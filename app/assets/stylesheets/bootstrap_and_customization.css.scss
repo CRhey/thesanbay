@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Playfair:400,700);
+@import url(http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco:400,700);
 
 $navbar-default-link-color: black;
 $navbar-nav-pills-link-font: black;
@@ -35,6 +35,18 @@ $jumbotron-font-size: 18px;
   border-bottom: 1px solid #e5e5e5;
 }
 
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+
+.marketing {
+  padding-top: 100px;
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 35px;
+}
+
 body {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -45,6 +57,7 @@ body {
 .footer {
   padding-right: 15px;
   padding-left: 15px;
+  padding-bottom: 10px
 }
 
 /* Custom page header */

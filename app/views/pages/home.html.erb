@@ -1,7 +1,27 @@
 <br>
 <div class="jumbotron center">
-	<h1>Ready to help?</h1>
-	<br>
-	<%= link_to "Start survey", survey_path, class: "btn btn-lg btn-success" %>
-	<h2><small>It will take only few minutes</small></h2>
+	<h1>You can do it!</h1>
+	<p class="lead">Tell us how do you get news about events, places and people in the Bay Area and what do you think about the quality of the existing media sources.</p>
+	<%= link_to "Start survey", href="https://docs.google.com/a/google.com/forms/d/1G94vZf3NhtxV-uCCoR_WmoDTdfp9ONRcTkD2zpcEvbY", class: "btn btn-lg btn-success" if mobile_device? %>
+	<%= link_to "Start survey", survey_path, class: "btn btn-lg btn-success" if not mobile_device? %>
 </div>
+
+<div class="row marketing center">
+
+		<p>Care to share?</p>
+	 
+		<!-- Facebook -->
+		<a href="http://www.facebook.com/sharer.php?u=http://polar-tundra-7862.herokuapp.com/" target="_blank"><img src="/assets/facebook.png" alt="Facebook" /></a>
+		 
+		<!-- Twitter -->
+		<a href="http://twitter.com/share?url=http://polar-tundra-7862.herokuapp.com&text=Live in Bay Area? Complete the survey!" target="_blank"><img src="/assets/twitter.png" alt="Twitter" /></a>
+		 
+		<!-- Google+ -->
+		<a href="https://plus.google.com/share?url=http://polar-tundra-7862.herokuapp.com" target="_blank"><img src="/assets/google.png" alt="google" /></a>
+		 
+		<!-- Email -->
+		<!-- Email -->
+		<a href="mailto:?Subject=Check this out!&Body=I%20saw%20this%20and%20thought%20of%20you!%20 http://www.simplesharebuttons.com"><img src="/assets/email.png" alt="Email" /></a>
+ 
+
+</div>	
