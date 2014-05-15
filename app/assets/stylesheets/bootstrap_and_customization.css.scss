@@ -55,8 +55,6 @@ body {
 .header,
 .marketing,
 .footer {
-  padding-right: 15px;
-  padding-left: 15px;
   padding-bottom: 10px
 }
 
@@ -86,16 +84,25 @@ body {
 }
 
 .footer {
-padding-top: 19px;
-color: #777;
-border-top: 1px solid #e5e5e5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
 }
 
-.footer {
-padding-right: 0;
-padding-left: 0;
-width:100%;
-max-width: 730px;
-bottom: 5px; 
-position:absolute;
+html,body{
+    height: 100%
+}
+
+#wrap {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+width: 100%;
+/*Negative indent footer by its height*/
+margin: 0 auto -60px;
+position: fixed;
+left: 0;
+top: 0;
 }
