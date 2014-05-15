@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'bootstrap-sass'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilde        
 
